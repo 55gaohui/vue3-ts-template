@@ -1,0 +1,29 @@
+{
+  "compilerOptions": {
+    "target": "ES6",
+    "useDefineForClassFields": true,
+    "module": "ESNext",
+    "lib": ["ES2020", "DOM", "DOM.Iterable"],
+    "skipLibCheck": true,
+
+    /* Bundler mode */
+    "moduleResolution": "node",
+    "allowImportingTsExtensions": true,
+    "allowSyntheticDefaultImports": true,
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "noEmit": true,
+    "jsx": "preserve", // 保留原始的 JSX 代码，不进行编译
+
+    /* Linting */
+    "strict": true,
+    "noUnusedLocals": true, //报告未使用的局部变量的错误
+    "noUnusedParameters": true, //报告函数中未使用参数的错误s
+    "noFallthroughCasesInSwitch": true, //确保switch语句中的任何非空情况都包含
+    "allowJs": true, //允许使用js
+    "baseUrl": ".",
+    "paths": { "@/*": ["src/*"], "#/*": ["types/*"] }, //路径映射,配合别名使用
+  },
+  "include": ["src/**/*.ts", "src/**/*.d.ts", "src/**/*.tsx", "src/**/*.vue","types/*.d.ts", "src/apis/api.ts/api.ts"],
+  "references": [{ "path": "./tsconfig.node.json" }]
+}
