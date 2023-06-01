@@ -9,5 +9,6 @@ import Layout from '@/layout/Index.vue'
 <style>
 #app {
   height: inherit;
+  background: #fff;
 }
 </style>
