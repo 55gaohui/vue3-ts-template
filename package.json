@@ -11,12 +11,13 @@
     "lint": "eslint src",
     "fix": "eslint src --fix",
     "lint:stylelint": "stylelint  src/**/*.{vue,css,less} --fix",
-    "lint-staged": {
-      "*.{js,ts,vue,jsx,tsx}": [
-        "yarn lint"
-      ]
-    },
+    "lint-staged": "lint-staged",
     "prepare": "husky install"
+  },
+  "lint-staged": {
+    "*.{js,jsx,tsx,ts,vue,json}": [
+      "yarn lint"
+    ]
   },
   "dependencies": {
     "axios": "^1.4.0",
