@@ -3,7 +3,6 @@ module.exports = {
     'stylelint-config-recommended',
     'stylelint-config-recommended-less',
     'stylelint-config-recommended-vue',
-    'stylelint-config-prettier', //预定义的配置文件,确保 Stylelint规则和Prettier 很好地集成。
     'stylelint-config-recess-order'
   ],
   plugins: ['stylelint-prettier'], //集成 Prettier 的插件
